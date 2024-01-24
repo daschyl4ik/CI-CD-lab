@@ -5,10 +5,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: UseDotNet@2
-  inputs:
-    version: '3.x'
-    packageType: 'sdk'
 
 - task: Ansible@0
   inputs:
