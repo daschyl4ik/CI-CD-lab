@@ -1,0 +1,8 @@
+---
+- name: 'git_checkout'
+  hosts: 'aws_machine'
+  become: true
+  gather_facts: true
+
+  roles:
+   - git_checkout
