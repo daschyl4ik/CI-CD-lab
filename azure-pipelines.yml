@@ -16,4 +16,6 @@ steps:
     connectionOverSsh: 'minio_aws'
     playbookSourceRemoteMachine: 'ansibleMachine'
     playbookPathAnsibleMachineOnRemoteMachine: 'ansible/playbooks'
-    inventoriesRemoteMachine: 'noInventory'
+    inventoriesRemoteMachine: 'file'
+    inventoryFileSourceRemoteMachine: 'ansibleMachine'
+    inventoryFileAnsibleMachineOnRemoteMachine: 'ansible/hosts.txt'
