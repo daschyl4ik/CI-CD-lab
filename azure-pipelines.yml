@@ -10,7 +10,7 @@ steps:
     version: '3.x'
     packageType: 'sdk'
 
-- task: Ansible@4
+- task: Ansible
   inputs:
     playbookPath: 'ansible/playbooks/git_checkout.yml'
     inventoryFile: 'hosts.txt'
