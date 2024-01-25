@@ -8,11 +8,11 @@ jobs:
     vmImage: 'ubuntu-latest'
   steps:
   - task: Ansible@0
-  inputs:
-    ansibleInterface: 'remoteMachine'
-    connectionOverSsh: 'minio_aws'
-    playbookSourceRemoteMachine: 'ansibleMachine'
-    playbookPathAnsibleMachineOnRemoteMachine: 'ansible/playbooks'
-    inventoriesRemoteMachine: 'file'
-    inventoryFileSourceRemoteMachine: 'ansibleMachine'
-    inventoryFileAnsibleMachineOnRemoteMachine: 'ansible/hosts.txt'
+    inputs:
+      ansibleInterface: 'remoteMachine'
+      connectionOverSsh: 'minio_aws'
+      playbookSourceRemoteMachine: 'ansibleMachine'
+      playbookPathAnsibleMachineOnRemoteMachine: 'ansible/playbooks'
+      inventoriesRemoteMachine: 'file'
+      inventoryFileSourceRemoteMachine: 'ansibleMachine'
+      inventoryFileAnsibleMachineOnRemoteMachine: 'ansible/hosts.txt'
