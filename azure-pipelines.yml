@@ -1,12 +1,13 @@
 trigger:
 - main
 
-pool:
-  vmImage: 'ubuntu-latest'
-
-steps:
-
-- task: Ansible@0
+jobs:
+- job: BuildAndTest
+  displayName: 'Build and Test'
+  pool:
+    vmImage: 'ubuntu-latest'
+  steps:
+  - task: Ansible@0
   inputs:
     ansibleInterface: 'remoteMachine'
     connectionOverSsh: 'minio_aws'
