@@ -5,7 +5,7 @@ jobs:
 - job: BuildAndTest
   displayName: 'Build and Test'
   pool:
-    vmImage: 'ubuntu-latest'
+    name: 'myagent'
   steps:
   - task: Ansible@0
     inputs:
