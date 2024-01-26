@@ -5,7 +5,7 @@ jobs:
 - job: BuildAndTest
   displayName: 'Build and Test'
   pool:
-    name: 'myagent'
+    name: 'default'
   steps:
   - task: Ansible@0
     inputs:
