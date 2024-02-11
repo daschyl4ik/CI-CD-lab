@@ -10,6 +10,6 @@ jobs:
   - task: Ansible@0
     inputs:
       ansibleInterface: 'agentMachine'
-      playbookPathOnAgentMachine: 'ansible/playbooks'
+      playbookPathOnAgentMachine: 'ansible/playbooks/git_checkout.yml'
       inventoriesAgentMachine: 'file'
       inventoryFileOnAgentMachine: 'ansible/hosts.txt'
