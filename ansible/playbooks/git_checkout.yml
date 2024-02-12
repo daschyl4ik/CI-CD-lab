@@ -3,6 +3,9 @@
   hosts: 'aws_machine'
   become: true
   gather_facts: true
+  tasks:
+    - name: Print contents of roles directory
+      shell: ls -l /home/myagent/_work/1/s/ansible/roles
 
-  roles:
-   - git_checkout
+  # roles:
+  #  - git_checkout
