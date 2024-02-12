@@ -4,8 +4,9 @@
   become: true
   gather_facts: true
   tasks:
-    - name: Print contents of roles directory
-      shell: ls -l /home/myagent/_work/1/s/ansible/roles
-
+  - name: Clone GitHub repository
+    ansible.builtin.git:
+      repo: https://github.com/daschyl4ik/CI-CD-lab.git
+      dest: /home/minio_admin/CI-CD-lab
   # roles:
   #  - git_checkout
