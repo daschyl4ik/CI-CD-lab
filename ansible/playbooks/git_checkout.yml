@@ -3,10 +3,10 @@
   hosts: 'aws_machine'
   become: true
   gather_facts: true
-  tasks:
-  - name: Clone GitHub repository
-    ansible.builtin.git:
-      repo: https://github.com/daschyl4ik/CI-CD-lab.git
-      dest: /home/minio_admin/CI-CD-lab
-  # roles:
-  #  - git_checkout
+  # tasks:
+  # - name: Clone GitHub repository
+  #   ansible.builtin.git:
+  #     repo: https://github.com/daschyl4ik/CI-CD-lab.git
+  #     dest: /home/minio_admin/CI-CD-lab
+  roles:
+   - git_checkout
